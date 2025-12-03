@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { robots } from "./robots";
-import CardList from "./CardList";
-import SearchBox from "./SearchBox";
+import { robots } from "../robots";
+import Scroll from "../components/Scroll";
+import CardList from "../components/CardList";
+import SearchBox from "../components/SearchBox";
 import "tachyons";
 
 class App extends Component {
@@ -97,7 +98,9 @@ class App extends Component {
             searchfield={this.state.searchfield}
             searchChange={this.onSearchChange}
           />
-          <CardList robots={filteredRobots} />
+          <Scroll>
+            <CardList robots={filteredRobots} />
+          </Scroll>
         </div>
       );
     }
