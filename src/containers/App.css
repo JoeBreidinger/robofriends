@@ -1,0 +1,61 @@
+/* SVG Logo responsive sizing */
+.robofriends-logo {
+  width: 700px;
+  height: 300px;
+  padding-bottom: 1rem;
+}
+
+/* Tablet and smaller devices */
+@media (max-width: 1024px) {
+  .robofriends-logo {
+    width: 500px;
+    height: 215px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .robofriends-logo {
+    width: 350px;
+    height: 150px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .robofriends-logo {
+    width: 250px;
+    height: 107px;
+  }
+}
+
+/* Scroll container styling */
+.scroll-box {
+  overflow-y: scroll;
+  border: 1px solid black;
+  height: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+/* Tablet devices */
+@media (max-width: 1024px) {
+  .scroll-box {
+    height: 600px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .scroll-box {
+    height: 500px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .scroll-box {
+    height: 400px;
+  }
+}
